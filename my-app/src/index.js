@@ -5,7 +5,7 @@ import "jquery";
 import "popper.js/dist/umd/popper";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/icons";
+
 
 import "./App.css"
 import App from './App';
