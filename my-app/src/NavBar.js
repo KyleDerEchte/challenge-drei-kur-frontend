@@ -19,10 +19,16 @@ export default class NavBar extends Component{
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/my-app/public#">Home</a>
+                                <a className="nav-link" href="/my-app/public#">Über uns</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/#">Produkte</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/#">Impressum</a>
                             </li>
                         </ul>
                     </div>
