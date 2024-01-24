@@ -6,10 +6,10 @@ export default class App extends Component
 {
   render() {
     return(
-        <Fragment>
+        <React.Fragment>
           <NavBar/>
             <MainContent/>
-        </Fragment>
+        </React.Fragment>
     )
   }
 }

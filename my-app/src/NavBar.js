@@ -3,7 +3,7 @@ import {Component} from "react";
 export default class NavBar extends Component{
     render() {return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar-style">
+            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark navbar-style">
                 <div className="container-fluid">
                     <a className="navbar-brand navbar-font" href="/my-app/public#">
                         Nein.
