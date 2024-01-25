@@ -1,8 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import hand_icon from "../Assets/hand_icon.png";
 import arrow_icon from "../Assets/arrow.png";
-import hero_imae from "../Assets/hero_image.png";
 import imaeee from "../Assets/t-shirt-mit-h-stickerei--072025HA01-worn-1-0-0-800-800_g.jpg.webp"
 
 const Hero = () => {
@@ -15,11 +13,11 @@ const Hero = () => {
                         <p>Hi, look what is new.</p>
 
                     </div>
-                    <p>Collections</p>
-                    <p>for everyone</p>
+                    <p className="id1">Kollektionen</p>
+                    <p className="id1">für jeden</p>
                 </div>
                 <div className="hero-latest-btn">
-                    <div>Latest Collection</div>
+                    <div>Neue Kollektionen</div>
                     <img src={arrow_icon} alt=""/>
                 </div>
 

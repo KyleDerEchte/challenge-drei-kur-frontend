@@ -10,6 +10,7 @@
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
     background: white;
+
 }
 .nav-logo
 {
@@ -20,7 +21,7 @@
 .navbar-font
 {
     font-family: "Brush Script MT", cursive;
-    font-size: 38px;
+    font-size: 48px;
 
 }
 .nav-menu
@@ -47,6 +48,7 @@
 .nav-menu li:hover{
     transform: scale(1.10);
     transition: 0.6s;
+
 }
 .nav-menu hr{
     border: none;

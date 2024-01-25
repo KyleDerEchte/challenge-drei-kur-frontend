@@ -34,6 +34,16 @@ import p33_img from "./product_33.png";
 import p34_img from "./product_34.png";
 import p35_img from "./product_35.png";
 import p36_img from "./product_36.png";
+import im1_img from "./cooldude.jpg"
+import p2e_img from './cooldude2.jpg'
+import p3e_img from './cooldude3.jpg'
+import p4e_img from './cooldude4.jpg'
+import hoodie_1 from "./hoodie_2.jpg"
+import hoodie_2 from "./hoodie_3.jpg"
+import hoodie_3 from "./hoodie_4.jpg"
+import hoodie_4 from "./hoodie_5.jpg"
+import hoodie_5 from "./hoodie_6.jpg"
+import hoodie_6 from "./hoodie_7.jpg"
 
 let all_product = [
   {
@@ -324,6 +334,72 @@ let all_product = [
     new_price: 85.0,
     old_price: 120.5,
   },
+  {
+    id:37,
+    name:"Herren T-Shirt OVERSIZE",
+    category: "t-shirt",
+    image:im1_img,
+    new_price:50.00,
+    old_price:80.50,
+  },
+  {id:38,
+    name:"Herren T-Shirt BASIC",
+    category:"t-shirt",
+    image:p2e_img,
+    new_price:85.00,
+    old_price:120.50,
+  },
+  {id:39,
+    name:"Herren T-Shirt V-AUSSCHNITT",
+    category:"t-shirt",
+    image:p3e_img,
+    new_price:60.00,
+    old_price:100.50,
+  },
+  {id:40,
+    name:"Herren T-Shirt POLOSHIRT",
+    category:"t-shirt",
+    image:p4e_img,
+    new_price:100.00,
+    old_price:150.00,
+  },
+  {id:41,
+    name:"Herren Hoodie GRAU",
+    category:"hoodie",
+    image:hoodie_1,
+    new_price:110.00,
+  },
+  {id:42,
+    name:"Herren Hoodie NAVY",
+    category:"hoodie",
+    image:hoodie_2,
+    new_price:110.00,
+  },
+  {id:43,
+    name:"Herren Hoodie TAUPE",
+    category:"hoodie",
+    image:hoodie_3,
+    new_price:110.00,
+  },
+  {id:44,
+    name:"Herren Hoodie BRAUN",
+    category:"hoodie",
+    image:hoodie_4,
+    new_price:110.00,
+  },
+  {id:45,
+    name:"Herren Hoodie SCHWARZ",
+    category:"hoodie",
+    image:hoodie_5,
+    new_price:110.00,
+  },
+  {id:46,
+    name:"Herren Hoodie GRÜN",
+    category:"hoodie",
+    image:hoodie_6,
+    new_price:110.00,
+  },
+
 ];
 
 export default all_product;

@@ -4,7 +4,7 @@ import cart_icon from "../src/Assets/cart_icon.png";
 import {Link} from "react-router-dom";
 
 const NavBar = () => {
-    const [menu, setMenu] = useState("über uns");
+    const [menu, setMenu] = useState("");
 
     const handleMenuClick = (menuItem) => {
         setMenu((prevMenu) => (prevMenu === menuItem ? "default" : menuItem));
