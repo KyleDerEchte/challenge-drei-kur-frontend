@@ -1,5 +1,3 @@
-import p1_img from './product_1.png'
-import imag1_img from "./images_1.jpg"
 import im1_img from "./cooldude.jpg"
 import p2_img from './cooldude2.jpg'
 import p3_img from './cooldude3.jpg'
