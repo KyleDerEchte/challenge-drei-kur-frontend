@@ -9,10 +9,15 @@
 
 
 }
+.footer_background{
+    background: linear-gradient(180deg,#e1ffea22,#6c92ab 60%);
+}
 .footer-logo{
-
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     margin-left: 10px;
 }
 .footer-logo p{

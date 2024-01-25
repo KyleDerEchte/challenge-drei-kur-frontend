@@ -11,9 +11,9 @@ const NavBar = () => {
     };
 
     return (
-        <div className="navbarCSS">
+        <div className="navbar position-sticky">
             <div className="nav-logo">
-                <p className="navbar-font">Nein.</p>
+                <p className="navbar-font"><Link  className="link" to="/">Nein.</Link></p>
             </div>
             <ul className="nav-menu">
                 <li onClick={() => handleMenuClick("shop")}><Link className="link" to="/">

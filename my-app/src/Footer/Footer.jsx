@@ -7,7 +7,7 @@ import pinterest_icon from "../Assets/pintester_icon.png"
 const Footer = () =>
 {
     return(
-        <div className="footer">
+        <div className="bg py-2 mt-2 footer_background">
             <div className="footer-logo">
                 <p>Nein.</p>
             </div>

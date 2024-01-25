@@ -20,6 +20,7 @@
 }
 .navbar-font
 {
+    margin-left: 30px;
     font-family: "Brush Script MT", cursive;
     font-size: 48px;
     color: black;
@@ -32,8 +33,7 @@
     align-items: center;
     list-style: none;
     gap: 50px;
-    font-family: "Roboto Light", serif;
-    font-size: 20px;
+    font-size: 21px;
     color: black;
     font-weight: 500;
 
@@ -63,6 +63,7 @@
     display: flex;
     align-items: center;
     gap: 45px;
+    margin-right: 30px;
 }
 
 .nav-login-cart button{

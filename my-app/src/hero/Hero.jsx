@@ -1,11 +1,11 @@
 import React from "react";
 import "./Hero.css";
 import arrow_icon from "../Assets/arrow.png";
-import imaeee from "../Assets/t-shirt-mit-h-stickerei--072025HA01-worn-1-0-0-800-800_g.jpg.webp"
+import imaeee from "../Assets/D24F8B87-F857-47C1-8BB5-ADC1AB641684_1_201_a.jpeg"
 
 const Hero = () => {
     return(
-        <div className="hero">
+        <div className="bg-body hero">
             <div className="hero-left">
                 <h2>NEW ARRIVALS ONLY</h2>
                 <div>
@@ -23,7 +23,7 @@ const Hero = () => {
 
             </div>
             <div className="hero-right">
-                <img src={imaeee} alt=""/>
+                <img src={imaeee}  alt=""/>
 
             </div>
 
