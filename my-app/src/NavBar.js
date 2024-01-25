@@ -13,11 +13,12 @@ const NavBar = () => {
     return (
         <div className="navbarCSS">
             <div className="nav-logo">
-                <p className="navbar-font">Nein.</p>
+                <li><Link className="navbar-font" to="/">Nein.</Link>{menu === "shop" ? <hr/> : <></>}
+                </li>
             </div>
             <ul className="nav-menu">
                 <li onClick={() => handleMenuClick("shop")}><Link className="link" to="/">
-                    Shop</Link>{menu === "shop" ? <hr/> : <></>}
+                Shop</Link>{menu === "shop" ? <hr/> : <></>}
                 </li>
                 <li onClick={() => handleMenuClick("über uns")}>
                     <Link className="link" to="/über_uns">
