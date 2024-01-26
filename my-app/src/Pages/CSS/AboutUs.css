@@ -1,0 +1,27 @@
+.AboutUsHeader{
+text-align:left;
+font-size:26px;
+font-weight: bold;
+margin-bottom: 30px;
+margin-top: 30px;
+margin-left:20px;
+}
+
+.Container{
+display: flex;
+align-items: center;
+margin-left:20px;
+}
+
+.Text{
+flex: 1;
+}
+
+.AboutUsBody{
+font-size:18px;
+}
+
+.Teamwork_Bild{
+margin-left: 20px;
+margin-right:50px;
+}
