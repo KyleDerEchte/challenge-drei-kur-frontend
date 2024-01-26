@@ -32,8 +32,10 @@ display: flex;
     height: 69px;
     border-radius: 75px;
     border: 1px solid #374151;
-    background: #ededed;
+    background: white;
     color: #171717;
     font-size: 18px;
-    font-family: "Roboto Light", serif;
+}
+.shopcategory-loadmore:hover{
+    background-color: dimgrey;
 }

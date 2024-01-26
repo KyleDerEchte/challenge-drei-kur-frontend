@@ -398,6 +398,7 @@ let all_product = [
     category:"hoodie",
     image:hoodie_6,
     new_price:110.00,
+    description: "Grüner Hoodie"
   },
 
 ];

@@ -17,11 +17,13 @@
     font-size: 26px;
     font-weight: 600;
 
+
 }
 .hero-left p{
     color: #6c92ab;
     font-size: 100px;
     font-weight: 700;
+
 }
 .hero-hand-icon{
     display: flex;
@@ -56,4 +58,5 @@
     height: fit-content;
 
 }
+
 
