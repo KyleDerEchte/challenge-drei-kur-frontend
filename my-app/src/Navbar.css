@@ -48,10 +48,10 @@
 
 }
 .nav-menu li:hover{
-    transform: scale(1.10);
-    transition: 0.6s;
-
+    animation: wiggle 2.5s linear;
 }
+
+
 .nav-menu hr{
     border: none;
     width: 80%;
@@ -80,6 +80,8 @@
 }
 .nav-login-cart button:active{
     background: #515151;
+
+
 }
 
 .nav-cart-count{
@@ -96,6 +98,41 @@
     background: darkolivegreen;
     color: white;
 }
+.shopping-cart:active{
+
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
+
+}
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+.shopping-cart:hover{
+    animation: wiggle 2s infinite;
+}
+
+
+
 .link
 {
     color: black;
