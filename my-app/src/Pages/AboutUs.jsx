@@ -1,6 +1,6 @@
 import React from "react";
-import "./CSS/AboutUs.css"
-import teamwork_image from "../Assets/Teamwork.jpg";
+import "./CSS/AboutUs.css";
+import teamwork_image from "../Assets/Teamimage.jpg";
 
 const AboutUS = () => {
     return(
