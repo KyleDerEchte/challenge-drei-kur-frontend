@@ -1,6 +1,6 @@
 import React from "react";
 import "./CSS/CheckOut.css"
-import CheckoutContent from "../CheckoutContent /CheckoutContent";
+import CheckoutContent from "../CheckoutContent/CheckoutContent";
 
 
 const CheckOut = () => {
