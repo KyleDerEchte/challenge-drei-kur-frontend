@@ -18,8 +18,11 @@ const LoginSingup = () => {
                     <input type="checkbox" name="" id=""/>
                     <p>Durch das drücken von Weiter, Stimme ich den Bedigungen & Policy zu.</p>
 
+
                 </div>
+
             </div>
+
         </div>
     )
 }
