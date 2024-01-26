@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import "./CartItems.css"
 import {ShopContext} from "../Context/ShopContext";
 import remove_icon from "../Assets/cart_cross_icon.png"
+import {Link} from "react-router-dom";
 
 
 const CartItems = ()=>{
@@ -69,7 +70,9 @@ const CartItems = ()=>{
                             <h3>{Totalkosten()}€</h3>
                         </div>
                     </div>
+                    <Link to="/Checkout">
                     <button>ZUR KASSE</button>
+                    </Link>
                 </div>
                 <div className="cartitems-promocode">
                     <p>Wenn du einen Gutschein hast, Hier eingeben oder einfügen</p>

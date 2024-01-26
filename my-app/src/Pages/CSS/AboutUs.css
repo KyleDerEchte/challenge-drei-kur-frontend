@@ -19,9 +19,13 @@ flex: 1;
 
 .AboutUsBody{
 font-size:18px;
+
 }
 
 .Teamwork_Bild{
 margin-left: 20px;
 margin-right:50px;
+}
+.about-us-space{
+    margin-bottom: 5%;
 }

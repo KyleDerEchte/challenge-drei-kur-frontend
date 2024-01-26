@@ -11,6 +11,7 @@ import Impressum from "./Pages/Impressum";
 import Footer from "./Footer/Footer";
 import tshirt_banner from "./Assets/tshirt_banner.jpg"
 import hoodie_banner from "./Assets/hoodies.jpg.webp"
+import CheckOut from "./Pages/CheckOut";
 
 
 export default class App extends Component
@@ -32,6 +33,7 @@ export default class App extends Component
                     </Route>
                     <Route path="/cart" element={<Cart/>}/>
                     <Route path="/login" element={<LoginSingup/>}/>
+                    <Route path="/Checkout" element={<CheckOut/>}></Route>
                 </Routes>
 
                 <Footer/>

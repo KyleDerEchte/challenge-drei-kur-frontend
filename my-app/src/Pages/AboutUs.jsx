@@ -37,6 +37,9 @@ const AboutUS = () => {
                         <img className="Teamwork_Bild" src={teamwork_image} alt="" width="400"/>
                     </div>
                 </div>
+            <div>
+                <p className="about-us-space"></p>
+            </div>
             </body>
         </div>
     )
