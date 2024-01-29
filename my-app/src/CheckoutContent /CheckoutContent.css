@@ -8,7 +8,10 @@
 .CheckoutContent-container{
     width: 580px;
     height: 600px;
-    background: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+    backdrop-filter: blur(20px);
     margin: auto;
     padding: 40px 60px;
 
@@ -45,6 +48,7 @@
     font-weight: 500;
     cursor: pointer;
 }
+
 .CheckoutContent-login{
     margin-top: 20px;
     color: #5c5c5c;

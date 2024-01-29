@@ -9,7 +9,6 @@ const CartItems = ()=>{
     const {Versandkosten,getTotalCartAmount,all_product,cartItems,removeCart} = useContext(ShopContext);
 
         const Totalkosten = () => {
-
             if (getTotalCartAmount() === 0) {
                 return 0;
             } else {
@@ -21,13 +20,13 @@ const CartItems = ()=>{
         <div className="cartitems">
 
             <div className="cartitems-format-main">
-                <p>Products</p>
-                <p>Title</p>
-                <p>Price</p>
-                <p>Quantity</p>
-                <p>Size</p>
-                <p>Total</p>
-                <p>Remove</p>
+                <p>Produkt</p>
+                <p>Name</p>
+                <p>Preis</p>
+                <p>Menge</p>
+                <p>Größe</p>
+                <p>Anzahl</p>
+                <p>Entfernen</p>
             </div>
             <hr/>
             {all_product.map((e)=>{

@@ -3,6 +3,7 @@ import "./ProductDisplay.css"
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png"
 import {ShopContext} from "../Context/ShopContext";
+import funny_cart_gif from "../Assets/wired-flat-139-basket.gif"
 
 
 const ProductDisplay =(props) =>{
@@ -59,7 +60,7 @@ const ProductDisplay =(props) =>{
                 </div>
                 <button onClick={() => {
                     addToCart(product.id)
-                }}>IN DEN WARENKORB </button>
+                }}>IN DEN WARENKORB  </button>
                 <p className="productdisplay-right-category"><span>Category: </span>{product.category}</p>
 
 

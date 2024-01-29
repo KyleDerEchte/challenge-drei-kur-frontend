@@ -87,6 +87,10 @@
     outline: none;
     cursor: pointer;
 }
+.productdisplay-right button img{
+    height: 40px;
+    width: 40px;
+}
 .productdisplay-right button:active{
     background: #171717;
 }
