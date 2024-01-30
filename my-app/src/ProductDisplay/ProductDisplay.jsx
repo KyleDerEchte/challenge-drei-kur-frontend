@@ -39,17 +39,14 @@ const ProductDisplay =(props) =>{
                     <p>(122)</p>
                 </div>
                 <div className="productdisplay-right-prices">
-                    <div className="productdisplay-right-price-old">{product.old_price}</div>
-                    <div className="productdisplay-right-price-new">{product.new_price}€</div>
+                    <div className="productdisplay-right-price-new">{product.price}€</div>
                 </div>
-                <div className="productdisplay-right-desription">{product.description}</div>
                 <div className="productdisplay-right-size">
                     <h1>Wähle die Größe</h1>
                     <select className="productdisplay-right-size-drop"
                         id="sizeDropdown"
                         value={selectedSize}
-                        onChange={handleSizeChange}
-                    >
+                        onChange={handleSizeChange}>
                         <option value="S">S</option>
                         <option value="M">M</option>
                         <option value="L">L</option>
@@ -60,6 +57,7 @@ const ProductDisplay =(props) =>{
                 </div>
                 <button onClick={() => {
                     addToCart(product.id)
+                    console.log(product.id)
                 }}>IN DEN WARENKORB  </button>
                 <p className="productdisplay-right-category"><span>Category: </span>{product.category}</p>
 

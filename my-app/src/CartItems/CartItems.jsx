@@ -36,10 +36,10 @@ const CartItems = ()=>{
                             <div className="cartitems-format cartitems-format-main">
                                 <img src={e.image} alt="" className="carticon-product-icon"/>
                                 <p>{e.name}</p>
-                                <p>{e.new_price}€</p>
+                                <p>{e.price}€</p>
                                 <button className="cartitems-quantity">{cartItems[e.id]}</button>
                                 <p className="question_mark">{"?"}</p>
-                                <p>{e.new_price*cartItems[e.id]}€</p>
+                                <p>{e.price*cartItems[e.id]}€</p>
                                 <img className="cartitems-remove-icon" src={remove_icon} onClick={() => {removeCart(e.id)}} alt=""/>
                             </div>
                             <hr />
