@@ -55,12 +55,18 @@ const ProductDisplay =(props) =>{
                     {/* Hier können Sie den ausgewählten Wert verwenden, wie es benötigt wird */}
 
                 </div>
+                <div className="button-container">
+                <div className="upload-container">
+                    <input type="file"/>
+                    <button>
+                        Upload dein Logo
+                    </button>
+                </div>
                 <button onClick={() => {
                     addToCart(product.id)
                     console.log(product.id)
-                }}>IN DEN WARENKORB  </button>
-                <p className="productdisplay-right-category"><span>Category: </span>{product.category}</p>
-
+                }}>IN DEN WARENKORB </button>
+                </div>
 
             </div>
 

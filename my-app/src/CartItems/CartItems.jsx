@@ -5,6 +5,7 @@ import remove_icon from "../Assets/cart_cross_icon.png"
 import {Link} from "react-router-dom";
 
 
+
 const CartItems = ()=>{
     const {Versandkosten,getTotalCartAmount,all_product,cartItems,removeCart} = useContext(ShopContext);
 
@@ -15,6 +16,25 @@ const CartItems = ()=>{
               return  Versandkosten() + getTotalCartAmount();
             }
         };
+        //const generetedCartData = () => {
+        //    const cartData = {
+        //        items: all_product
+        //            .filter((e) => cartItems[e.id] > 0)
+         //           .map((e) => ({
+          //              name: e.name,
+          //              size: e.size,
+         //               cost: e.cost,
+        //                price: e.price,
+       //                 productType: e.productType.name,
+       //                 color: e.color.color,
+       //                 materialType: e.materialType,
+       //                 amount: cartItems[e.id],
+       //             })),
+    //        };
+      //      return cartData;
+       // };
+
+
 
     return(
         <div className="cartitems">
@@ -25,7 +45,7 @@ const CartItems = ()=>{
                 <p>Preis</p>
                 <p>Menge</p>
                 <p>Größe</p>
-                <p>Anzahl</p>
+                <p>Gesamtpreis</p>
                 <p>Entfernen</p>
             </div>
             <hr/>
@@ -38,7 +58,7 @@ const CartItems = ()=>{
                                 <p>{e.name}</p>
                                 <p>{e.price}€</p>
                                 <button className="cartitems-quantity">{cartItems[e.id]}</button>
-                                <p className="question_mark">{"?"}</p>
+                                <p> {e.size}</p>
                                 <p>{e.price*cartItems[e.id]}€</p>
                                 <img className="cartitems-remove-icon" src={remove_icon} onClick={() => {removeCart(e.id)}} alt=""/>
                             </div>
@@ -73,6 +93,7 @@ const CartItems = ()=>{
                     <button>ZUR KASSE</button>
                     </Link>
                 </div>
+
                 <div className="cartitems-promocode">
                     <p>Wenn du einen Gutschein hast, Hier eingeben oder einfügen</p>
                     <div className="cartitems-promobox">

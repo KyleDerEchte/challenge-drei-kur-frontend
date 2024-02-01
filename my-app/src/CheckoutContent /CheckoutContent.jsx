@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "./CheckoutContent.css";
 import paypayl_ima from "../Assets/paypal_payment_method_card_icon_142733.png";
 import mastercard_ima from "../Assets/1495815236-jd07_84584.png"
@@ -11,7 +11,8 @@ import {Link} from "react-router-dom";
 
 
 
-const CheckoutContent = () => {
+
+const CheckoutContent = ({generetedCartData}) => {
     const [selectedOption, setSelectedOption] = useState('');
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
@@ -33,15 +34,119 @@ const CheckoutContent = () => {
             [name]: value,
         }));
     };
+    //const cartData = generetedCartData();
 
-    const handleSaveToJson = () => {
+    const handleSaveToJson = async () => {
+
+
+        const currentDateTime = new Date();
+        const formattedDateTime = currentDateTime.toLocaleString();
+
         const dataToSave = {
-            ...inputValues,
-            paymentMethod: selectedOption,
+            "customer": {
+                ...inputValues,
+            },
+            "orderDetails":[
+                {
+                    "product":{
+                        //cartData: cartData,
+                    }
+                }
+            ],
+            "localDateTime":formattedDateTime,
+            "paymentMethod":{
+                "description":selectedOption,
+            },
+            "orderFulfilment":{
+                "description":"order-placed"
+            }
         }
-       localStorage.setItem("TestData", JSON.stringify(dataToSave));
+        const data = {
+            "customer": {
+                "forename": "Max",
+                "surname": "Mustermann",
+                "address": {
+                    "street": "Beispielstraße",
+                    "houseNumber": "34",
+                    "plz": "10115",
+                    "city": "Berlin",
+                    "country": "Deutschland"
+                }
+            },
+            "orderDetails": [
+                {
+                    "product": {
+                        "name": "Produkt A",
+                        "size": "M",
+                        "costs": 20.50,
+                        "price": 24.99,
+                        "productType": {
+                            "name": "Typ A"
+                        },
+                        "color": {
+                            "color": "Rot"
+                        },
+                        "materialType":[
+                            {
+                                "material":"Baumwolle"
+                            }
+                        ]
+                    },
+                    "amount": 2
+                },
+                {
+                    "product": {
+                        "name": "Produkt B",
+                        "size": "L",
+                        "costs": 30.75,
+                        "price": 34.99,
+                        "productType": {
+                            "name": "Typ B"
+                        },
+                        "color": {
+                            "color": "Blau"
+                        },
+                        "materialType":[
+                            {
+                                "material":"Baumwolle"
+                            }
+                        ]
+                    },
+                    "amount": 1
+                }
+            ],
+            "localDateTime": "2024-01-29T15:00:00",
+            "paymentMethod": {
+                "description": "Kreditkarte"
+            },
+            "orderFulfillment":{
+                "description":"order-placed"
+            }
+        }
 
-        console.log("Daten wurden geschrieben: ", dataToSave);
+        try {
+            const response = await fetch('http://localhost:8080/api/store/order', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                const jsonResponse = await response.json();
+                console.log("Server Response: ", jsonResponse);
+                // Weitere Aktionen nach erfolgreicher Speicherung
+            } else {
+                console.log("HTTP-Error: " + response.status);
+                // Behandlung von Fehlern bei der Anfrage
+            }
+        } catch (error) {
+            console.error("Fehler beim Senden der Daten: ", error);
+            // Behandlung von Netzwerkfehlern
+        }
+
+
     };
 
 

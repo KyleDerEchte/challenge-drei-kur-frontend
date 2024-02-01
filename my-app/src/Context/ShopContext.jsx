@@ -18,8 +18,16 @@ const ShopContextProvider = (props) => {
 
 
     const addToCart = (itemId) => {
-        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
-        console.log("1")
+        console.log((prev)=>({...prev,[itemId]:prev[itemId]+1}))
+        setCartItems(prev => {
+            // Überprüfen, ob das Produkt bereits im Warenkorb ist
+            const existingQuantity = prev[itemId];
+            const newQuantity = existingQuantity ? existingQuantity + 1 : 1;
+
+            // Rückgabe des aktualisierten Warenkorbs
+            return {...prev, [itemId]: newQuantity};
+        });
+        console.log("Items: " + getTotalCartItems())
     }
 
     const removeCart = (itemId) => {
@@ -33,11 +41,11 @@ const ShopContextProvider = (props) => {
             if (cartItems[item]>0)
             {
                 let itemInfo = all_product.find((product)=>product.id===Number(item))
-                totalAmount += itemInfo.new_price * cartItems[item];
+                totalAmount += itemInfo.price * cartItems[item];
             }
 
         }
-        return totalAmount;
+        return Math.round(totalAmount, 2);
     }
 
     const Versandkosten = () => {

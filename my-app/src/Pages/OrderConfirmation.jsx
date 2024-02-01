@@ -18,9 +18,9 @@ const OrderConfirmation = () => {
             <p></p>
             <div className="Information-Container">
                 <h5>Bestelldetails</h5>
-                <p>Bestell Nummer : </p>
-                <p>Gesamtpreis :</p>
-                <p>Lieferadresse :</p>
+                <p>Bestell Nummer : 120</p>
+                <p>Gesamtpreis : 59.98€</p>
+                <p>Lieferadresse : Beispielstraße 34 10115 Berlin </p>
                 <h5> Wir werden uns Schnellstmöglich um ihre Bestellung kümmern</h5>
             </div>
             <div className="Backbutton">

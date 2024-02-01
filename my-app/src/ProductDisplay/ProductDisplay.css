@@ -123,3 +123,12 @@
     border-color: #007bff; /* Farbe ändern, wenn das Dropdown-Menü fokussiert ist */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hinzufügen eines leichten Schattens */
 }
+.upload-container {
+    margin-top: 100px;
+    margin-left: 10px;
+    border: 1px solid black;
+
+
+    justify-content: center;
+}
+

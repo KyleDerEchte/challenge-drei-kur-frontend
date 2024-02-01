@@ -1,13 +1,17 @@
-import im1_img from "./cooldude.jpg"
-import p2e_img from './cooldude2.jpg'
-import p3e_img from './cooldude3.jpg'
-import p4e_img from './cooldude4.jpg'
-import hoodie_1 from "./hoodie_2.jpg"
-import hoodie_2 from "./hoodie_3.jpg"
-import hoodie_3 from "./hoodie_4.jpg"
-import hoodie_4 from "./hoodie_5.jpg"
-import hoodie_5 from "./hoodie_6.jpg"
-import hoodie_6 from "./hoodie_7.jpg"
+import Damen_Hoodie_rot from "../Assets/Damen_Hoodie_Rot_new.webp"
+import Unisex_Hoodie_Blau from "../Assets/Hoodie_Blau_new.webp"
+import Hoodie_Schwarz from "../Assets/54f468460a1246af9209a7a4b59211f2.jpg_new.webp"
+import Damen_Hoodie_Gelb from "../Assets/Hoodie_Gelb_new.webp"
+import hoodie_Grau from "../Assets/Hoodie_grau_new.webp"
+import Rosa from "../Assets/Kinder_hoodie_rosa_new.webp"
+import Tweiß from "../Assets/Herren_Tshirt_weis_new.webp"
+import Tlila from "../Assets/Damen_Tshirt_Lila_new.webp"
+import O from "../Assets/Unisex_T-shirt_orange_new.webp"
+import G from "../Assets/Kinder_Tshirt_Grun_new.webp"
+import im1_img from "./cooldude.jpg";
+import p2_img from "./cooldude2.jpg";
+import p3_img from "./cooldude3.jpg";
+import p4_img from "./cooldude4.jpg";
 
 
 let all_product = [
@@ -17,7 +21,7 @@ let all_product = [
     size: "M",
     costs: 25.00,
     price: 35.99,
-    image: hoodie_4,
+    image: Damen_Hoodie_rot,
     productType : {"name": "hoodie"},
     color: {"color": "Rot"},
     materialType: [{"material":"Baumwolle"}]
@@ -28,7 +32,7 @@ let all_product = [
     size: "L",
     costs: 30.00,
     price: 45.00,
-    image: hoodie_3,
+    image: Unisex_Hoodie_Blau,
     productType: {"name": "hoodie"},
     color: {"color": "Blau"},
     materialType: [{"material":"Polyester"}]
@@ -39,7 +43,7 @@ let all_product = [
     size: "XL",
     costs: 28.50,
     price: 50.00,
-    image: hoodie_2,
+    image: Hoodie_Schwarz,
     productType: {"name": "hoodie"},
     color: {"color": "Schwarz"},
     materialType: [{"material":"Baumwolle-Polyester-Mix"}]
@@ -50,7 +54,7 @@ let all_product = [
     size: "S",
     cost: 22.00,
     price: 32.99,
-    image: hoodie_1,
+    image: Damen_Hoodie_Gelb,
     productType: {"name": "hoodie"},
     color: {"color": "Gelb"},
     materialType: [{"material":"Viskose"}]
@@ -61,7 +65,7 @@ let all_product = [
     size: "M",
     cost: 27.00,
     price: 37.50,
-    image: hoodie_5,
+    image: hoodie_Grau,
     productType: {"name": "hoodie"},
     color: {"color": "Grau"},
     materialType: [{"material":"Wolle"}]
@@ -72,7 +76,7 @@ let all_product = [
     size: "XS",
     cost: 20.00,
     price: 29.99,
-    image: hoodie_6,
+    image: Rosa,
     productType: {"name": "hoodie"},
     color: {"color": "Rosa"},
     materialType: [{"material":"Baumwolle"}]
@@ -83,7 +87,7 @@ let all_product = [
     size: "L",
     costs: 15.00,
     price: 19.99,
-    image: im1_img,
+    image: Tweiß,
     productType: {"name": "t-shirt"},
     color: {"color": "Weiß"},
     materialType: [{"material":"Baumwolle"}]
@@ -94,7 +98,7 @@ let all_product = [
     size: "M",
     costs: 13.50,
     price: 18.00,
-    image: p2e_img,
+    image: Tlila,
     productType: {"name": "t-shirt"},
     color: {"color": "Lila"},
     materialType: [{"material":"Polyester"}]
@@ -104,7 +108,7 @@ let all_product = [
     name: "Unisex T-Shirt ORANGE",
     size: "S",
     costs: 14.00,
-    image: p3e_img,
+    image: O,
     price: 20.00,
     productType: {"name": "t-shirt"},
     color: {"color": "Orange"},
@@ -116,11 +120,11 @@ let all_product = [
     size: "XS",
     costs: 12.00,
     price: 15.99,
-    image: p4e_img,
+    image: G,
     productType: {"name": "t-shirt"},
     color: {"color": "Grün"},
     materialType: [{"material":"Viskose"}]
-  }
+  },
     
     ]
   
