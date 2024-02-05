@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import "CheckoutContent.css";
+//import "./CheckoutContent.css";
 import paypayl_ima from "../Assets/paypal_payment_method_card_icon_142733.png";
 import mastercard_ima from "../Assets/1495815236-jd07_84584.png"
 import visa_ima from "../Assets/1495815261-jd08_84586.png"
